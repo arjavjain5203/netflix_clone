@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("./image/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid rgb(187, 187, 187);
+    cursor: pointer;
+
+}
+
+.btn-red {
+    border: 0px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 3px 24px;
+    font-size: 27px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: 0px;
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 0px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.scroll-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 80%; /* Adjust width as needed */
+}
+
+.scroll-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+}
+
+.item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    width: 150px; /* Set a fixed width for items */
+    margin-right: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.scroll-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+.photo{
+    padding: 1%;
+}
+.photo>img{
+    border-radius: 1rem;
+}
+
+
+.slide{
+    color: white;
+    height: 60vh;
+    padding-left: 7%;
+}
+
+.button_1,.button_2 {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+}
+
+.button_1>select,.button_2>select {
+    width: 50%;
+    padding: 10px 30px 10px 10px; /* Adjust padding for spacing */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Adjust border style as needed */
+    border-radius: 5px; /* Adjust border radius for rounded corners */
+    -webkit-appearance: none; /* Remove default arrow in Chrome */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none; /* Remove default arrow in other browsers */
+    background: none; /* Remove default background */
+    color: white;
+    margin: 1em;
+    margin-left: 0px;
+    
+}
+
+.button_1_inner,.button_2_inner {
+    position: absolute;
+    top: 50%;
+    right: 110px; /* Adjust positioning as needed  side wala arrow he ye */
+    pointer-events: none; /* Make the arrow non-clickable */
+    transform: translateY(-50%);
+    fill: #000000; /* Arrow color */
+   
+}
+
+select:focus {
+    outline:auto; /* Remove default focus outline */
+    border-color: #fdfdfd; /* Add focus border color */
+}
+
+
+.mrtj{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    color: aliceblue;
+    grid-gap: 1rem;
+    height: 40vh;
+    padding: 1% 13% 2% 7%;
+
+}
+.outer_mrtj>h2{
+    color: aliceblue;
+    margin-left: 7%;
+}
+.mrtj>div{
+    padding: 1.5rem 1rem 8rem 1rem;
+    border-radius: 5%;
+    font-size: 1.1rem; 
+}
+.mrtj>div>p{
+    padding-top: 4%;
+}
+.card-mrtj {
+    position: relative;
+    background: linear-gradient(135deg, #0a0b20 0%, #14162e 50%, #2a112e 100%);
+}
+
+.tv {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.faq h2 {
+    text-align: center;
+    font-size: 34px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.last2nd p{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+    justify-content: center;
+    font-size: 100%;
+}
+.hero-buttons input{
+    font-size: 180%;
+    border-radius: 5px;
+    width: 40%;
+    background-color: #121212;
+    border: 0.1px solid white;
+    color: rgb(255, 255, 255);
+}
+
+/* footer start here*/
+
+
+
+.footer {
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #b3b3b3;
+    padding: 20px 40px;
+}
+
+
+.footer-top {
+    margin-bottom: 20px;
+}
+
+.footer-top h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column a {
+    color:#b3b3b3;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+
+.footer-bottom>div {
+    margin-top: 2%;
+    color: #b3b3b3;
+}
+
+.language-select {
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #666;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer a {
+    font-size: 14px;
+    color: #7e7e7e;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+/* .footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+} */
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
