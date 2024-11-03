@@ -43,7 +43,16 @@ nav img {
     position: relative;
     z-index: 10;
 }
-
+.language-picker {
+    position: relative;
+    z-index: 10;
+    padding: 1px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+  }
+  
 nav button {
     position: relative;
     z-index: 10;
