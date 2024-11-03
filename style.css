@@ -128,12 +128,15 @@ nav button {
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, 0.5);
 }
-
-
-#scroll-left {
-    position: absolute;
-    left: 0;
+#scroll-list
+{
+    width:95%;
 }
+.scroll-btn{
+    border-radius: 10px;
+}
+
+
 .container {
     display: flex;
     align-items: center;
@@ -174,11 +177,11 @@ nav button {
 }
 
 .left {
-    left: 10px;
+    left: -31px;
 }
 
 .right {
-    right: 10px;
+    right: 20px;
 }
 .photo{
     padding: 1%;
@@ -192,6 +195,7 @@ nav button {
     color: white;
     height: 60vh;
     padding-left: 7%;
+    padding-right: 8%;
 }
 
 .button_1, .button_2 {
@@ -238,7 +242,6 @@ select:focus {
     grid-template-columns: 25% 25% 25% 25%;
     color: aliceblue;
     grid-gap: 1rem;
-    height: 40vh;
     padding: 1% 13% 2% 7%;
 
 }
@@ -255,15 +258,19 @@ select:focus {
     padding-top: 4%;
 }
 .card-mrtj {
-    position: relative;
+    /* position: relative; */
     background: linear-gradient(135deg, #0a0b20 0%, #14162e 50%, #2a112e 100%);
 }
 
 .tv {
+    /* position: absolute; */
+    position: relative;
+
+}
+.tv>svg{
     position: absolute;
     bottom: 0;
     right: 0;
-
 }
 .faq h2 {
     text-align: center;
