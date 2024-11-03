@@ -130,6 +130,10 @@ nav button {
 }
 
 
+#scroll-left {
+    position: absolute;
+    left: 0;
+}
 .container {
     display: flex;
     align-items: center;
@@ -190,13 +194,15 @@ nav button {
     padding-left: 7%;
 }
 
-.button_1,.button_2 {
+.button_1, .button_2 {
     position: relative;
     display: inline-block;
     width: 200px; /* Adjust width as needed */
+    margin-right: -77px; /* Adjust this value to control the gap */
+    
 }
 
-.button_1>select,.button_2>select {
+.button_1>select, .button_2>select {
     width: 50%;
     padding: 10px 30px 10px 10px; /* Adjust padding for spacing */
     font-size: 16px;
@@ -209,23 +215,22 @@ nav button {
     color: white;
     margin: 1em;
     margin-left: 0px;
-    
 }
 
-.button_1_inner,.button_2_inner {
+.button_1_inner, .button_2_inner {
     position: absolute;
     top: 50%;
     right: 110px; /* Adjust positioning as needed  side wala arrow he ye */
     pointer-events: none; /* Make the arrow non-clickable */
     transform: translateY(-50%);
     fill: #000000; /* Arrow color */
-   
 }
 
 select:focus {
-    outline:auto; /* Remove default focus outline */
+    outline: auto; /* Remove default focus outline */
     border-color: #fdfdfd; /* Add focus border color */
 }
+
 
 
 .mrtj{
@@ -439,33 +444,18 @@ footer .questions {
 }
 
 
-
-
 /*responsive footer*/
 @media screen and (max-width:960px) {
-  
-        #top1 { grid-area: top1; }
-        #column1 { grid-area: column1; }
-        #column2 { grid-area: column2; }
-        #column3 { grid-area: column3; }
-        #column4 { grid-area: column4; }
-        .footer {
-            display: grid;
-            grid-template-areas: 
-                'top1 top1'
-                'column1 column2'
-                'column3 column4';
-            grid-template-columns: 50% 50%; /* Defines two columns with equal width */
-        }
-    
+    .footer-links{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }       
     
 }
 
-/* @media screen and (max-width: 1300px) {
-    
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }    
-} */    
+@media screen and (max-width:600px){
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+    }
+}
