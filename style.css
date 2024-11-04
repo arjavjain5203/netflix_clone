@@ -267,7 +267,7 @@ select:focus {
     padding-top: 4%;
 }
 .card-mrtj {
-    /* position: relative; */
+    position: relative;
     background: linear-gradient(135deg, #0a0b20 0%, #14162e 50%, #2a112e 100%);
 }
 
@@ -276,7 +276,7 @@ select:focus {
     position: relative;
 
 }
-.tv>svg{
+.tv{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -350,9 +350,9 @@ select:focus {
     font-size: 100%;
 }
 .hero-buttons input{
-    font-size: 180%;
+    font-size: 140%;
     border-radius: 5px;
-    width: 40%;
+    width: 30%;
     background-color: #121212;
     border: 0.1px solid white;
     color: rgb(255, 255, 255);
@@ -449,11 +449,10 @@ select:focus {
     }
 
     .hero-buttons {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 16px;
+        gap: 12px;
+        width: 103%;
     }
 
     .faq h2 {
@@ -469,7 +468,6 @@ select:focus {
     .footer-item{
         align-items: center;
     }
- 
 
 }
 
@@ -490,5 +488,13 @@ select:focus {
     .footer-links{
         display: flex;
         flex-direction: column;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-buttons input{
+        width: 63%;
+        padding-right: 0px;
     }
 }
