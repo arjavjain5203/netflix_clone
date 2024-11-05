@@ -43,6 +43,7 @@ nav img {
     position: relative;
     z-index: 10;
 }
+
 .language-picker {
     position: relative;
     z-index: 10;
@@ -51,8 +52,8 @@ nav img {
     font-size: 16px;
     color: white;
     background-color: black;
-  }
-  
+}
+
 nav button {
     position: relative;
     z-index: 10;
@@ -123,12 +124,14 @@ nav button {
     color: white;
     border: 0px;
 }
+
 .hero-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
 }
+
 .main input {
     padding: 7px 101px 8px 14px;
     color: white;
@@ -137,11 +140,12 @@ nav button {
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, 0.5);
 }
-#scroll-list
-{
-    width:95%;
+
+#scroll-list {
+    width: 95%;
 }
-.scroll-btn{
+
+.scroll-btn {
     border-radius: 10px;
 }
 
@@ -156,16 +160,20 @@ nav button {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    width: 80%; /* Adjust width as needed */
+    width: 80%;
+    /* Adjust width as needed */
 }
 
 .scroll-list::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for a cleaner look */
+    display: none;
+    /* Hide scrollbar for a cleaner look */
 }
 
 .item {
-    flex: 0 0 auto; /* Prevent items from shrinking */
-    width: 150px; /* Set a fixed width for items */
+    flex: 0 0 auto;
+    /* Prevent items from shrinking */
+    width: 150px;
+    /* Set a fixed width for items */
     margin-right: 10px;
     padding: 20px;
     background-color: #f0f0f0;
@@ -192,61 +200,80 @@ nav button {
 .right {
     right: 20px;
 }
-.photo{
+
+.photo {
     padding: 1%;
 }
-.photo>img{
+
+.photo>img {
     border-radius: 1rem;
 }
 
 
-.slide{
+.slide {
     color: white;
     height: 60vh;
     padding-left: 7%;
     padding-right: 8%;
 }
 
-.button_1, .button_2 {
+.button_1,
+.button_2 {
     position: relative;
     display: inline-block;
-    width: 200px; /* Adjust width as needed */
-    margin-right: -77px; /* Adjust this value to control the gap */
-    
+    width: 200px;
+    /* Adjust width as needed */
+    margin-right: -77px;
+    /* Adjust this value to control the gap */
+
 }
 
-.button_1>select, .button_2>select {
+.button_1>select,
+.button_2>select {
     width: 50%;
-    padding: 10px 30px 10px 10px; /* Adjust padding for spacing */
+    padding: 10px 30px 10px 10px;
+    /* Adjust padding for spacing */
     font-size: 16px;
-    border: 1px solid #ccc; /* Adjust border style as needed */
-    border-radius: 5px; /* Adjust border radius for rounded corners */
-    -webkit-appearance: none; /* Remove default arrow in Chrome */
-    -moz-appearance: none; /* Remove default arrow in Firefox */
-    appearance: none; /* Remove default arrow in other browsers */
-    background: none; /* Remove default background */
+    border: 1px solid #ccc;
+    /* Adjust border style as needed */
+    border-radius: 5px;
+    /* Adjust border radius for rounded corners */
+    -webkit-appearance: none;
+    /* Remove default arrow in Chrome */
+    -moz-appearance: none;
+    /* Remove default arrow in Firefox */
+    appearance: none;
+    /* Remove default arrow in other browsers */
+    background: none;
+    /* Remove default background */
     color: white;
     margin: 1em;
     margin-left: 0px;
 }
 
-.button_1_inner, .button_2_inner {
+.button_1_inner,
+.button_2_inner {
     position: absolute;
     top: 50%;
-    right: 110px; /* Adjust positioning as needed  side wala arrow he ye */
-    pointer-events: none; /* Make the arrow non-clickable */
+    right: 110px;
+    /* Adjust positioning as needed  side wala arrow he ye */
+    pointer-events: none;
+    /* Make the arrow non-clickable */
     transform: translateY(-50%);
-    fill: #000000; /* Arrow color */
+    fill: #000000;
+    /* Arrow color */
 }
 
 select:focus {
-    outline: auto; /* Remove default focus outline */
-    border-color: #fdfdfd; /* Add focus border color */
+    outline: auto;
+    /* Remove default focus outline */
+    border-color: #fdfdfd;
+    /* Add focus border color */
 }
 
 
 
-.mrtj{
+.mrtj {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     color: aliceblue;
@@ -254,18 +281,22 @@ select:focus {
     padding: 1% 13% 2% 7%;
 
 }
-.outer_mrtj>h2{
+
+.outer_mrtj>h2 {
     color: aliceblue;
     margin-left: 7%;
 }
-.mrtj>div{
+
+.mrtj>div {
     padding: 1.5rem 1rem 8rem 1rem;
     border-radius: 5%;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
 }
-.mrtj>div>p{
+
+.mrtj>div>p {
     padding-top: 4%;
 }
+
 .card-mrtj {
     position: relative;
     background: linear-gradient(135deg, #0a0b20 0%, #14162e 50%, #2a112e 100%);
@@ -276,7 +307,8 @@ select:focus {
     position: relative;
 
 }
-.tv{
+
+.tv {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -285,25 +317,25 @@ select:focus {
 .faq h2 {
     text-align: center;
     font-size: 34px;
-  }
-  
-  .faq {
+}
+
+.faq {
     background: black;
     color: white;
     padding: 34px;
-  }
-  
-  .faqbox:hover {
+}
+
+.faqbox:hover {
     background-color: #414141;
     color: white;
-  }
-  
-  .faqbox svg {
+}
+
+.faqbox svg {
     filter: invert(1);
     transition: transform 0.5s ease;
-  }
-  
-  .faqbox {
+}
+
+.faqbox {
     transition: all 1s ease-out;
     font-size: 24px;
     background-color: #2d2d2d;
@@ -312,44 +344,46 @@ select:focus {
     margin: 10px auto;
     cursor: pointer;
     position: relative;
-  }
-  
-  .question {
+}
+
+.question {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .question span {
+}
+
+.question span {
     flex-grow: 1;
-  }
-  
-  .answer {
+}
+
+.answer {
     display: none;
     margin-top: 10px;
     font-size: 24px;
     transition: max-height 0.5s ease-out;
     overflow: hidden;
     max-height: 0;
-  }
-  
-  .faqbox.active .answer {
+}
+
+.faqbox.active .answer {
     display: block;
-    max-height: 200px; /* Adjust as needed */
-  }
-  
-  .faqbox.active .icon {
+    max-height: 200px;
+    /* Adjust as needed */
+}
+
+.faqbox.active .icon {
     transform: rotate(45deg);
-  }
-  
-.last2nd p{
+}
+
+.last2nd p {
     padding-top: 5%;
     padding-bottom: 2%;
     text-align: center;
     justify-content: center;
     font-size: 100%;
 }
-.hero-buttons input{
+
+.hero-buttons input {
     font-size: 140%;
     border-radius: 5px;
     width: 30%;
@@ -392,7 +426,7 @@ select:focus {
 }
 
 .footer-column a {
-    color:#b3b3b3;
+    color: #b3b3b3;
     text-decoration: none;
     margin-bottom: 10px;
     font-size: 14px;
@@ -415,6 +449,7 @@ select:focus {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .footer a {
     font-size: 14px;
     color: #7e7e7e;
@@ -432,7 +467,7 @@ select:focus {
 
 @media screen and (max-width: 1300px) {
 
-    nav{
+    nav {
         max-width: 90vw;
     }
 
@@ -465,36 +500,109 @@ select:focus {
         padding: 75px 0;
     }
 
-    .footer-item{
+    .footer-item {
         align-items: center;
     }
 
+    .mrtj {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+
+    }
+
+    .outer_mrtj {
+        padding-top: 2%;
+    }
 }
+
+@media screen and (max-width: 1000px) {
+    .outer_mrtj {
+        padding: 5%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+}
+
 
 
 /*responsive footer*/
 @media screen and (max-width:960px) {
-    .footer-links{
+    .footer-links {
         display: grid;
-        grid-template-columns: repeat(2,auto);
-    }       
-    .answer,.faqbox{
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .answer,
+    .faqbox {
         font-size: 16px;
     }
-    
+
+    .mrtj {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card-mrtj {
+        padding-bottom: 0%;
+    }
+
+    .outer_mrtj {
+        padding: 10%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .card-mrtj {
+        height: 13vh;
+        border-radius: 4px;
+    }
+
+
 }
 
-@media screen and (max-width:600px){
-    .footer-links{
+@media screen and (max-width:600px) {
+    .footer-links {
         display: flex;
         flex-direction: column;
     }
-    .hero-buttons{
+
+    .hero-buttons {
         display: flex;
         flex-direction: column;
     }
-    .hero-buttons input{
+
+    .hero-buttons input {
         width: 63%;
         padding-right: 0px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+
+    .outer_mrtj {
+        margin-top: 15%;
+
+    }
+}
+
+@media screen and (max-width:760px) {
+    .outer_mrtj {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .outer_mrtj {
+        padding-top: 16%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .outer_mrtj {
+        padding-top: 27%;
     }
 }
